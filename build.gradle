@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group = 'guru.ru'
+version = 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.1'
+    testImplementation 'com.codeborne:selenide:7.0.2'
+}
+
+test {
+    useJUnitPlatform()
+}
